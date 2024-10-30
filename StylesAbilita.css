@@ -35,3 +35,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Colore di sfondo e testo di default */
+.accordion-button {
+    background-color: #bdf3fc;
+    color: black;
+}
+
+/* Colore speciale per il pulsante e il contenuto della tendina aperta */
+.accordion-button:not(.collapsed) {
+    background-color: #1565C0;
+    color: white;
+}
+
+/* Colore del testo e sfondo speciale per il contenuto della tendina aperta */
+.accordion-item .accordion-button:not(.collapsed) + .accordion-collapse .accordion-body {
+    color: white;
+    background-color: #1565C0;
+}
+
+/* Colore di sfondo predefinito per il corpo della tendina */
+.accordion-collapse .accordion-body {
+    background-color: #bdf3fc;
+    color: black;
+}
