@@ -35,3 +35,50 @@ footer {
     bottom: 0; /* Posizione in fondo */
     width: 100%; /* Larghezza al 100% */
 }
+
+/* Spazio tra la prima immagine e la barra di navigazione */
+img {
+    border-radius: 50%; /* Immagini rotonde */
+    width: 200px; /* Larghezza dell'immagine */
+    margin-top: 10px; /* Aggiunge 10px di spazio sopra l'immagine */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione per ingrandimento e ombra */
+}
+
+/* Stile specifico per la foto personale */
+.foto-personale {
+    border-radius: 50%; /* Immagini rotonde */
+    width: 200px; /* Larghezza dell'immagine */
+    margin-top: 10px; /* Spazio sopra l'immagine */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
+}
+
+.foto-personale:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+    box-shadow: 0px 0px 15px 5px #1565C0; /* Effetto ombra azzurro */
+}
+
+/* Rende l'immagine di YouTube linkabile*/
+.immagine-casuale img {
+    cursor: pointer; /* Cambia il cursore quando si passa sopra l'immagine */
+    transition: transform 0.3s; /* Aggiunge transizione per ingrandimento al passaggio del mouse */
+	margin-bottom: 15px;
+}
+
+.immagine-casuale img:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
+	margin-bottom: 15px;
+	box-shadow: 0px 0px 15px 5px #80b5ff;
+}
+
+/* Rende l'immagine del Podcast linkabile */
+.immagine2 img {
+    cursor: pointer; /* Cambia il cursore quando si passa sopra l'immagine */
+    transition: transform 0.3s; /* Aggiunge transizione per ingrandimento al passaggio del mouse */
+	margin-bottom: 15px;
+}
+
+.immagine2 img:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
+	margin-bottom: 15px;
+	box-shadow: 0px 0px 15px 5px yellow;
+}
