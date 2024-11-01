@@ -78,29 +78,3 @@ img {
     transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
     box-shadow: 0px 0px 15px 5px #1565C0; /* Effetto ombra azzurro */
 }
-
-/* Rende l'immagine di YouTube linkabile*/
-.immagine-casuale img {
-    cursor: pointer; /* Cambia il cursore quando si passa sopra l'immagine */
-    transition: transform 0.3s; /* Aggiunge transizione per ingrandimento al passaggio del mouse */
-	margin-bottom: 15px;
-}
-
-.immagine-casuale img:hover {
-    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
-	margin-bottom: 15px;
-	box-shadow: 0px 0px 15px 5px #80b5ff;
-}
-
-/* Rende l'immagine del Podcast linkabile */
-.immagine2 img {
-    cursor: pointer; /* Cambia il cursore quando si passa sopra l'immagine */
-    transition: transform 0.3s; /* Aggiunge transizione per ingrandimento al passaggio del mouse */
-	margin-bottom: 15px;
-}
-
-.immagine2 img:hover {
-    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
-	margin-bottom: 15px;
-	box-shadow: 0px 0px 15px 5px yellow;
-}

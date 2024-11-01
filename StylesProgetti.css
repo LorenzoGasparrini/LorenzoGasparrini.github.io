@@ -1,0 +1,68 @@
+body {
+    font: Arial; /* Imposta il font della pagina */
+    background-color: #bdf3fc; /* Colore di sfondo della pagina */
+    text-align: center; /* Centra il testo */
+    margin-bottom: 100px; /* Margine inferiore */
+}
+
+header {
+    background-color: #51b9c9; /* Colore di sfondo dell'intestazione */
+    color: white; /* Colore del testo dell'intestazione */
+    padding: 20px; /* Padding per l'intestazione */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.nav-tabs {
+    margin: 0;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #1565C0; /* Colore per quando il link è in hover (opzionale) */
+}
+
+img {
+    border-radius: 50%; /* Immagini rotonde */
+    width: 200px; /* Larghezza dell'immagine */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione per ingrandimento e ombra */
+}
+
+.descrizione {
+    margin: 20px; /* Margine per la descrizione */
+    text-align: center; /* Centra il testo della descrizione */
+}
+
+footer {
+    background-color: #51b9c9; /* Colore di sfondo del piè di pagina */
+    color: white; /* Colore del testo del piè di pagina */
+    padding: 10px; /* Padding per il piè di pagina */
+    position: fixed; /* Fissa il piè di pagina in fondo alla pagina */
+    bottom: 0; /* Posizione in fondo */
+    width: 100%; /* Larghezza al 100% */
+}
+
+/* Classe per tutte le immagini */
+.img-square {
+    border-radius: 50%; /* Immagini rotonde */
+    width: 200px; /* Larghezza dell'immagine */
+    margin-top: 10px; /* Aggiunge margine sopra l'immagine */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
+}
+
+.img-square:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+    box-shadow: 0px 0px 15px 5px #80b5ff; /* Effetto ombra per le immagini */
+}
