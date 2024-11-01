@@ -11,6 +11,28 @@ header {
     padding: 20px; /* Padding per l'intestazione */
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header-title {
+    margin: 0;
+}
+.nav-tabs {
+    margin: 0;
+}
+		
+.nav-tabs .nav-link {
+    color: white;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #1565C0; /* Colore per quando il link è in hover (opzionale) */
+}
+
+
 img {
     border-radius: 50%; /* Immagini rotonde */
     width: 200px; /* Larghezza dell'immagine */

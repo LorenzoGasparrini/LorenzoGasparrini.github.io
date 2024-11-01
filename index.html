@@ -7,30 +7,28 @@
     <link rel="icon" type="image/x-icon" href="eye-crossed.png"> <!-- Icona del sito (favicon) -->
 </head>
 <body>
-    <header>
-		<h1>L'angolo di Lorenzo Gasparrini</h1> <!-- Titolo principale della pagina -->
-		<ul class="nav nav-tabs"> <!-- Inizio della barra di navigazione -->
-			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="index.html" style="background-color: #bdf3fc;">Home</a> <!-- Link alla home -->
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="abilita.html">Traguardi</a> <!-- Link alla pagina delle abilità -->
-			</li>
-			<li class "nav-item">
-				<a class="nav-link" href="contatti.html">Contatti</a> <!-- Link alla pagina dei contatti -->
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" aria-disabled="true">Coming soon...</a> <!-- Link disabilitato -->
-			</li>
-		</ul> <!-- Fine della barra di navigazione -->
-	</header>
-
-
+    <header class="header-container">
+        <h1 class="header-title">L'angolo di Lorenzo Gasparrini</h1> <!-- Titolo principale della pagina -->
+        <ul class="nav nav-tabs"> <!-- Inizio della barra di navigazione -->
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" style="background-color: #bdf3fc; color: #1565C0">Home</a> <!-- Link alla home -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="abilita.html">Traguardi</a> <!-- Link alla pagina delle abilità -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contatti.html">Contatti</a> <!-- Link alla pagina dei contatti -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Coming soon...</a> <!-- Link disabilitato -->
+            </li>
+        </ul> <!-- Fine della barra di navigazione -->
+    </header>
 
     <main>
         <center>
-			<img src="FotoMia.jpg" alt="Foto di Lorenzo Gasparrini" class="foto-personale">
-		</center>
+            <img src="FotoMia.jpg" alt="Foto di Lorenzo Gasparrini" class="foto-personale">
+        </center>
 
         <p class="descrizione">
             Ciao, sono Lorenzo, ho 16 anni e studio all'ITIS Einstein De Lorenzo di Picerno.<br>
@@ -40,21 +38,35 @@
             Inoltre, gestisco il canale YouTube LG47 STUDIOS, dove pubblico principalmente contenuti multimediali legati alla scuola.<br>
             Creatività e dedizione sono al centro di tutto ciò che faccio.
         </p>
-			<div class="immagine-casuale">
-				<a href="https://www.youtube.com/@LG47_STUDIOS/videos" target="_blank">
-					<img src="https://yt3.googleusercontent.com/AZi1SW3cIaL4MDefCYZ3OBOOayeDN85iNbQCuWZWCqZMbAB101Nn4SOCWuX8d_xfifkmS1t3xg=s160-c-k-c0x00ffffff-no-rj" alt="Immagine 1">
-				</a>
-				<p>Canale YouTube</p>
-			</div>
+            <div class="immagine-casuale">
+                <a href="https://www.youtube.com/@LG47_STUDIOS/videos" target="_blank">
+                    <img src="https://yt3.googleusercontent.com/AZi1SW3cIaL4MDefCYZ3OBOOayeDN85iNbQCuWZWCqZMbAB101Nn4SOCWuX8d_xfifkmS1t3xg=s160-c-k-c0x00ffffff-no-rj" alt="Immagine 1">
+                </a>
+                <p>Canale YouTube</p>
+            </div>
 
-			<div class="immagine2">
-				<a href="https://podcasters.spotify.com/pod/show/mercuryspodcast" target="_blank">
-					<img src="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/staging/podcast_uploaded_nologo/41931726/41931726-1725103170448-cf84ad6a8665d.jpg" alt="Immagine 2">
-				</a>
-				<p>Mercury's Podcast</p>
-			</div>
+            <div class="immagine2">
+                <a href="https://podcasters.spotify.com/pod/show/mercuryspodcast" target="_blank">
+                    <img src="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/staging/podcast_uploaded_nologo/41931726/41931726-1725103170448-cf84ad6a8665d.jpg" alt="Immagine 2">
+                </a>
+                <p>Mercury's Podcast</p>
+            </div>
 
     </main>
     <footer>
-        <p>&copy; Lorenzo Gasparrini</p> <!-- Copyright dell'autore -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Link al JavaScript di Bootstrap -->
+		<div>
+			<p class="mb-0">&copy; Lorenzo Gasparrini</p>
+		</div>
+		<div>
+			<a href="mailto:lorenzo.gasparrini07@gmail.com" class="me-3" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width: 20px; height: auto;">
+			</a>
+			<a href="https://www.instagram.com/gasparrini.lorenzo/?hl=it" class="me-3" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 20px; height: auto;">
+			</a>
+			<a href="https://github.com/LorenzoGasparrini" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: auto;">
+			</a>
+		</div>
+	</footer>
+</html>
