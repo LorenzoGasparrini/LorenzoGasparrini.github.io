@@ -48,10 +48,37 @@ img {
 footer {
     background-color: #51b9c9; /* Colore di sfondo del piè di pagina */
     color: white; /* Colore del testo del piè di pagina */
-    padding: 10px; /* Padding per il piè di pagina */
+    padding: 20px; /* Aumenta il padding per ingrandire il footer */
+    height: 100px; /* Altezza fissa per ingrandire ulteriormente il footer */
     position: fixed; /* Fissa il piè di pagina in fondo alla pagina */
     bottom: 0; /* Posizione in fondo */
     width: 100%; /* Larghezza al 100% */
+    display: flex; /* Imposta la disposizione degli elementi */
+    justify-content: space-between; /* Spaziatura uniforme tra i div */
+    align-items: center; /* Allinea gli elementi verticalmente */
+    text-align: center; /* Centra il testo */
+}
+
+footer .quote {
+    font-style: italic; /* Stile corsivo per la citazione */
+    font-size: 14px; /* Dimensione del testo */
+    margin: 0 20px; /* Margine laterale per separare la citazione dagli altri elementi */
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 30px; /* Aumenta la dimensione delle icone */
+    height: auto;
+    margin-left: 15px; /* Spaziatura tra le icone */
+    transition: transform 0.3s; /* Aggiunge un effetto di transizione */
+}
+
+footer img:hover {
+    transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
 }
 
 /* Classe per tutte le immagini */
