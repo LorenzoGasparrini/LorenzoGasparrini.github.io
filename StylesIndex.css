@@ -17,13 +17,15 @@ header {
     align-items: center;
     padding: 10px;
 }
+
 .header-title {
     margin: 0;
 }
+
 .nav-tabs {
     margin: 0;
 }
-		
+
 .nav-tabs .nav-link {
     color: white;
 }
@@ -32,10 +34,11 @@ header {
     color: #1565C0; /* Colore per quando il link è in hover (opzionale) */
 }
 
-
 img {
     border-radius: 50%; /* Immagini rotonde */
     width: 200px; /* Larghezza dell'immagine */
+    margin-top: 50px; /* Aggiunge più spazio sopra l'immagine per centrarla */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione per ingrandimento e ombra */
 }
 
 .descrizione {
@@ -43,10 +46,25 @@ img {
     text-align: center; /* Centra il testo della descrizione */
 }
 
-.immagine-casuale, .immagine2 {
-    display: inline-block; /* Mostra le immagini affiancate */
-    margin: 20px; /* Margine per le immagini */
-    text-align: center; /* Centra il testo sotto le immagini */
+/* Contenitore centrato */
+.contenitore-centrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra l'immagine e il testo */
+    text-align: center; /* Centra il testo */
+}
+
+.foto-personale {
+    border-radius: 50%; /* Immagini rotonde */
+    width: 200px; /* Larghezza dell'immagine */
+    margin-top: 150px; /* Aggiunge più spazio sopra la foto */
+    margin-bottom: 20px; /* Spazio tra la foto e la descrizione */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
+}
+
+.foto-personale:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+    box-shadow: 0px 0px 15px 5px #1565C0; /* Effetto ombra azzurro */
 }
 
 footer {
@@ -83,25 +101,4 @@ footer img {
 
 footer img:hover {
     transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
-}
-
-/* Spazio tra la prima immagine e la barra di navigazione */
-img {
-    border-radius: 50%; /* Immagini rotonde */
-    width: 200px; /* Larghezza dell'immagine */
-    margin-top: 10px; /* Aggiunge 10px di spazio sopra l'immagine */
-    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione per ingrandimento e ombra */
-}
-
-/* Stile specifico per la foto personale */
-.foto-personale {
-    border-radius: 50%; /* Immagini rotonde */
-    width: 200px; /* Larghezza dell'immagine */
-    margin-top: 10px; /* Spazio sopra l'immagine */
-    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
-}
-
-.foto-personale:hover {
-    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
-    box-shadow: 0px 0px 15px 5px #1565C0; /* Effetto ombra azzurro */
 }
