@@ -3,91 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'angolo di Lorenzo Gasparrini</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="StylesTraguardi.css"> <!-- Link al file CSS esterno -->
-    <link rel="icon" type="image/x-icon" href="eye-crossed.png"> <!-- Icona del sito (favicon) -->
+    <title>Competizioni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesCompetizioni.css">
+    <link rel="icon" type="image/x-icon" href="eye-crossed.png">
 </head>
 <body>
-    <header class="header-container">
-        <h1 class="header-title">L'angolo di Lorenzo Gasparrini</h1> <!-- Titolo principale della pagina -->
-        <ul class="nav nav-tabs"> <!-- Inizio della barra di navigazione -->
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a> <!-- Link alla home -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Traguardi.html" style="background-color: #bdf3fc;">Traguardi</a> <!-- Link alla pagina delle abilità -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Progetti.html">Progetti</a> <!-- Link alla pagina dei contatti -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Coming soon...</a> <!-- Link disabilitato -->
-            </li>
-        </ul> <!-- Fine della barra di navigazione -->
+    <header>
+        <h1 class="titolo">Competizioni di Lorenzo Gasparrini</h1>
+        <nav class="nav-bar">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="progetti.html">Progetti</a>
+            <a class="nav-link active" href="competizioni.html">Competizioni</a>
+        </nav>
     </header>
 
     <main>
-        <div class="accordion" id="accordionExample">
-            <!-- Certamen -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        CERTAMEN 2024
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Il certamen è stata una competizione multimediale a cui ho partecipato personalmente insieme a due compagni di classe. <br>
-                        Si è trattato di creare un contenuto multimediale che riguardasse l'importanza della comunicazione e di come si sia evoluta nel tempo.<br>
-                        Alla fine della competizione abbiamo raggiunto la seconda posizione. <br>
-                        Bellissimo evento.
+        <div class="container mt-5">
+            <p class="descrizione">
+                Partecipare a competizioni mi ha sempre dato l'opportunità di mettermi alla prova e migliorare le mie capacità, sia nel montaggio video che in altri ambiti. Ogni esperienza ha contribuito alla mia crescita, permettendomi di acquisire nuove competenze e affrontare sfide interessanti.
+            </p>
+
+            <div class="accordion" id="competitionAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Olimpiadi Italiane di Cybersicurezza 2023-24
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#competitionAccordion">
+                        <div class="accordion-body">
+                            Questa è la prima competizione a cui ho partecipato con impegno. Sono riuscito a qualificarmi per la fase scolastica, esprimendo le mie esperienze nel campo della cybersecurity.
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- MediaShow -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        MEDIASHOW melfi 2024
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Competizione multimediale che riguardava la creazione di un contenuto video. <br>
-                        Lavorando individualmente ho passato le selezioni scolastiche ma per poi non vincere la competizione effetiva. <br>
-                        Rimarrà però una competizione a me a cuore poichè ho sia avuto la possibilità di legare meglio con il mio amico Gianvito e sia divertirmi in generale.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Olimpiadi Italiane di Informatica 2023-24
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#competitionAccordion">
+                        <div class="accordion-body">
+                            Sebbene non fossi preparato al meglio, ho voluto comunque provare questa esperienza per mettermi alla prova e apprendere nuove strategie per il futuro.
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Riconoscimenti -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        RICONOSCIMENTI
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Grazie alle tantissime partecipazioni a eventi pubblici della scuola come gli open day e i vari progetti ho potuto farmi un nome tra i professori e alcuni studenti che altrimenti non saprebbero chi sono.
-                    </div>
-                </div>
-            </div>
-
-            <!-- 100 Anni di Radio -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        100 ANNI DI RADIO
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        L'evento più recente a cui ho partecipato è stato l'anniversario della nascita della radio. <br>
-                        Partecipando con la radio ho potuto parlare in una radio video (radio laser) esprimendo le esperienza come speaker nella radio. <br>
-                        Tutto sommato è stato un bell'evento, ho potuto incontrare personaggi davvero interessanti, come il proprietario della radio dove va mio padre (radio potenza centrale).
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Gran Premio di Matematica Applicata 2023-24
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#competitionAccordion">
+                        <div class="accordion-body">
+                            Anche se non ho ottenuto un risultato eccezionale, questa competizione rimane per me molto importante. È stata una sfida impegnativa e stimolante, che mi ha aiutato a migliorare le mie capacità di problem solving.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,25 +66,15 @@
     </main>
 
     <footer>
-		<div>
-			<p class="mb-0">&copy; Lorenzo Gasparrini</p>
-		</div>
-		<div>
-			<p class="quote mb-0">"Tutta la vita è un esperimento. Più sperimenti più migliori" – Ralph Waldo Emerson</p>
-		</div>
-		<div>
-			<a href="mailto:lorenzo.gasparrini07@gmail.com" class="me-3" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
-			</a>
-			<a href="https://www.instagram.com/gasparrini.lorenzo/?hl=it" class="me-3" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-			</a>
-			<a href="https://github.com/LorenzoGasparrini" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-			</a>
-		</div>
-	</footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <p>&copy; Lorenzo Gasparrini</p>
+        <p class="quote">"Tutta la vita è un esperimento. Più sperimenti più migliori" – Emerson</p>
+        <div class="social-icons">
+            <a href="mailto:lorenzo.gasparrini07@gmail.com"><img src="gmail.png" alt="Gmail"></a>
+            <a href="https://www.instagram.com/gasparrini.lorenzo"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/LorenzoGasparrini"><img src="github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
