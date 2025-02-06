@@ -1,95 +1,122 @@
 body {
-    font: Arial; /* Imposta il font della pagina */
-    background-color: #bdf3fc; /* Colore di sfondo della pagina */
-    text-align: center; /* Centra il testo */
-    margin-bottom: 100px; /* Margine inferiore */
+    font-family: Arial, sans-serif;
+    background-color: #2b2e2b;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #51b9c9; /* Colore di sfondo dell'intestazione */
-    color: white; /* Colore del testo dell'intestazione */
-    padding: 20px; /* Padding per l'intestazione */
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #20211f;
     padding: 10px;
 }
 
-.header-title {
+.titolo {
+    color: white;
     margin: 0;
+    font-size: 2rem;
 }
 
-.nav-tabs {
-    margin: 0;
+/* Stili per la nav-bar */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #20211f;
+    padding: 10px 0;
 }
 
-.nav-tabs .nav-link {
+.nav-bar .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-bar .nav-link:hover {
+    color: #1565C0;
+}
+
+.nav-bar .nav-link.active {
+    color: #1565C0;
+    font-weight: 700;
+}
+
+.nav-bar .nav-link.disabled {
+    color: #A4D3E2;
+    pointer-events: none;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 100px); /* Per evitare che il footer copra i contenuti */
+}
+
+/* Stile per allineare immagini e testi */
+.row {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.col-md-8 {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.img-square {
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Stile per il footer */
+footer {
+    background-color: #2b2e2b;
+    color: white;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Stili per accordion */
+.accordion-button {
+    background-color: #4b4d4b;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: #4b4d4b;
     color: white;
 }
 
-.nav-tabs .nav-link:hover {
-    color: #1565C0; /* Colore per quando il link è in hover (opzionale) */
+.accordion-item {
+    margin-bottom: 10px;
 }
 
-img {
-    border-radius: 50%; /* Immagini rotonde */
-    width: 200px; /* Larghezza dell'immagine */
-    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione per ingrandimento e ombra */
-}
-
-.descrizione {
-    margin: 20px; /* Margine per la descrizione */
-    text-align: center; /* Centra il testo della descrizione */
-}
-
-footer {
-    background-color: #51b9c9; /* Colore di sfondo del piè di pagina */
-    color: white; /* Colore del testo del piè di pagina */
-    padding: 20px; /* Aumenta il padding per ingrandire il footer */
-    height: 100px; /* Altezza fissa per ingrandire ulteriormente il footer */
-    position: fixed; /* Fissa il piè di pagina in fondo alla pagina */
-    bottom: 0; /* Posizione in fondo */
-    width: 100%; /* Larghezza al 100% */
-    display: flex; /* Imposta la disposizione degli elementi */
-    justify-content: space-between; /* Spaziatura uniforme tra i div */
-    align-items: center; /* Allinea gli elementi verticalmente */
-    text-align: center; /* Centra il testo */
-}
-
-footer .quote {
-    font-style: italic; /* Stile corsivo per la citazione */
-    font-size: 14px; /* Dimensione del testo */
-    margin: 0 20px; /* Margine laterale per separare la citazione dagli altri elementi */
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-}
-
-footer img {
-    width: 30px; /* Aumenta la dimensione delle icone */
-    height: auto;
-    margin-left: 15px; /* Spaziatura tra le icone */
-    transition: transform 0.3s; /* Aggiunge un effetto di transizione */
-}
-
-footer img:hover {
-    transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
-}
-
-/* Classe per tutte le immagini */
-.img-square {
-    border-radius: 50%; /* Immagini rotonde */
-    width: 200px; /* Larghezza dell'immagine */
-    margin-top: 10px; /* Aggiunge margine sopra l'immagine */
-    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione */
-}
-
-.img-square:hover {
-    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
-    box-shadow: 0px 0px 15px 5px #80b5ff; /* Effetto ombra per le immagini */
+.accordion-body {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
 }

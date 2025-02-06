@@ -1,39 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>L'angolo di di Lorenzo Gasparrini</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>L'angolo di Lorenzo Gasparrini</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="StylesProgetti.css"> <!-- Link al file CSS esterno -->
     <link rel="icon" type="image/x-icon" href="eye-crossed.png"> <!-- Icona del sito (favicon) -->
-    <style>
-        /* Aggiunta di stili per spaziatura */
-        .descrizione {
-            margin-bottom: 35px; /* Spazio sotto la descrizione */
-        }
-
-        .row {
-            margin-bottom: 25px; /* Spazio tra i progetti */
-        }
-    </style>
 </head>
 <body>
-    <header class="header-container">
-        <h1 class="header-title">L'angolo di Lorenzo Gasparrini</h1>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Traguardi.html">Traguardi</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Progetti.html" style="background-color: #bdf3fc;">Progetti</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Coming soon...</a>
-            </li>
-        </ul>
-    </header>
+    <header>
+		<h1 class="titolo">L'angolo di Lorenzo Gasparrini</h1>
+		<nav class="nav-bar">
+			<a class="nav-link" href="index.html">Home</a>
+			<a class="nav-link" href="Traguardi.html">Traguardi</a>
+			<a class="nav-link active" href="Progetti.html">Progetti</a>
+		</nav>
+	</header>
+
 
     <main class="container mt-4">
         <center>
@@ -46,11 +28,11 @@
 
         <div class="row">
             <div class="col-md-4">
-                <img src="https://yt3.googleusercontent.com/AZi1SW3cIaL4MDefCYZ3OBOOayeDN85iNbQCuWZWCqZMbAB101Nn4SOCWuX8d_xfifkmS1t3xg=s160-c-k-c0x00ffffff-no-rj" alt="Immagine Canale YouTube" class="img-square">
+                <img src="FotoCanaleYoutube.png" alt="Immagine Canale YouTube" class="img-square">
             </div>
             <div class="col-md-8">
                 <h3>Canale YouTube: LG47 STUDIOS</h3>
-                <p>Scopri contenuti dedicati agli argomenti scolastici e alle competizioni, pensati per rendere l'apprendimento più coinvolgente e divertente. Unisciti a me per esplorare argomenti e novità!.</p>
+                <p>Scopri contenuti dedicati agli argomenti scolastici e alle competizioni, pensati per rendere l'apprendimento più coinvolgente e divertente. Unisciti a me per esplorare argomenti e novità!</p>
                 <a href="https://www.youtube.com/@LG47_STUDIOS/videos" target="_blank" class="btn btn-primary">Visita il Canale</a>
             </div>
         </div>
@@ -76,26 +58,27 @@
                 <a href="https://www.radioitigeo.it/" target="_blank" class="btn btn-primary">Visita Radio ITIGEO</a>
             </div>
         </div>
+		
+		<div class="row">
+            <div class="col-md-4">
+                <img src="RadioPotenzaCentrale.jpg" alt="Immagine Radio Potenza Centrale" class="img-square">
+            </div>
+            <div class="col-md-8">
+                <h3>Regista e speaker di Radio Potenza Centrale</h3>
+                <p>Da oramai qualche mese sono impegnato nella regia di Radio Potenza Centrale insieme a mio padre speaker. Ogni domenica e giovedì sera(una si ed una no) siamo impegnati corrispondentemente con il programma mattinandoo e il nostro personale "Non ci resta che...".</p>
+                <a href="https://www.radiopotenzacentrale.info/" target="_blank" class="btn btn-primary">Visita Radio Potenza Centrale</a>
+            </div>
+        </div>
     </main>
 
     <footer>
-		<div>
-			<p class="mb-0">&copy; Lorenzo Gasparrini</p>
-		</div>
-		<div>
-			<p class="quote mb-0">"Tutta la vita è un esperimento. Più sperimenti più migliori" – Ralph Waldo Emerson</p>
-		</div>
-		<div>
-			<a href="mailto:lorenzo.gasparrini07@gmail.com" class="me-3" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
-			</a>
-			<a href="https://www.instagram.com/gasparrini.lorenzo/?hl=it" class="me-3" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-			</a>
-			<a href="https://github.com/LorenzoGasparrini" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-			</a>
-		</div>
-	</footer>
+        <p>&copy; Lorenzo Gasparrini</p>
+        <p class="quote">"Tutta la vita è un esperimento. Più sperimenti più migliori" – Ralph Waldo Emerson</p>
+        <div class="social-icons">
+            <a href="mailto:lorenzo.gasparrini07@gmail.com"><img src="https://static.vecteezy.com/system/resources/previews/022/484/508/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Gmail"></a>
+            <a href="https://www.instagram.com/gasparrini.lorenzo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://github.com/LorenzoGasparrini"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+        </div>
+    </footer>
 </body>
 </html>
